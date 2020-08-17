@@ -16,12 +16,12 @@ class Produto extends Model
 
 
     public $messages = ['nome_produto.required' => 'O nome do produto é obrigatório',
-                        'nome_produto.min' => 'O nome do produto precisa ter no mínimo 3 caracateres',
-                        'nome_produto.max' => 'O nome do produto precisa ter no máximo 60 caracateres',
-                        'valor.required' => 'O valor é obrigatório',
-                        'valor.min' => 'O valor precisa ter no mínimo 2 caracateres',
-                        'valor.max' => 'O valor precisa ter no máximo 7 caracateres',
-            	       'loja_id.required' => 'O id da loja é obrigatório'];
+                'nome_produto.min' => 'O nome do produto precisa ter no mínimo 3 caracateres',
+                'nome_produto.max' => 'O nome do produto precisa ter no máximo 60 caracateres',
+                'valor.required' => 'O valor é obrigatório',
+                'valor.min' => 'O valor precisa ter no mínimo 2 caracateres',
+                'valor.max' => 'O valor precisa ter no máximo 7 caracateres',
+            	'loja_id.required' => 'O id da loja é obrigatório'];
 
 
     public function loja()

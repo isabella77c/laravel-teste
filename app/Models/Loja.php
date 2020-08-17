@@ -18,11 +18,11 @@ class Loja extends Model
 
 
     public $messages = ['nome_loja.required' => 'O nome da loja é obrigatório',
-                        'nome_loja.min' => 'O nome da loja precisa ter no mínimo 3 caracateres',
-                        'nome_loja.max' => 'O nome da loja precisa ter no máximo 100 caracateres',
-                        'email.required' => 'O e-mail é obrigatório',
-                        'email.email' => 'E-mail inválido',
-                        'email.unique' => 'Este e-mail já está cadastrado'];
+                'nome_loja.min' => 'O nome da loja precisa ter no mínimo 3 caracateres',
+                'nome_loja.max' => 'O nome da loja precisa ter no máximo 100 caracateres',
+                'email.required' => 'O e-mail é obrigatório',
+                'email.email' => 'E-mail inválido',
+                'email.unique' => 'Este e-mail já está cadastrado'];
 
     public function produtos()
     {
