@@ -30,7 +30,7 @@ class ProdutoSalvoNotification extends Notification
     {
         
         return (new MailMessage)
-                    ->subject("Produto Salvo")
+                    ->subject("Produto Salvo: ".$this->produto->nome_produto)
                     ->line($this->produto->nome_produto." - Preço atual = ".$this->produto->valor);
                     
     }
