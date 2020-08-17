@@ -67,11 +67,10 @@ abstract class BaseController
         }
 
         try {
-            $errors = [];
             $recurso = $this->classeRepository->update($id, $request);
             if (is_null($recurso))
             {
-                return response()->json(['erro' => 'Recurso não encontrado'], Response::HTTP_NOT_FOUND);    
+                return response()->json(['error' => 'Recurso não encontrado'], Response::HTTP_NOT_FOUND);    
             }
 
             return response()->json($recurso, Response::HTTP_CREATED);
@@ -87,7 +86,7 @@ abstract class BaseController
 
             $qtdeApagada = $this->classeRepository->destroy($id);
             if ($qtdeApagada === 0) {
-                return response()->json(['erro' => 'Recurso não encontrado'], Response::HTTP_NOT_FOUND);
+                return response()->json(['error' => 'Recurso não encontrado'], Response::HTTP_NOT_FOUND);
             }
 
             return response()->json('', 200);
